@@ -1,0 +1,19 @@
+@echo off
+
+REM Delete Internet Explorer Cache files
+del /F /S /Q %USERPROFILE%\AppData\Local\Microsoft\Windows\Temporary Internet Files\*.*
+
+REM Delete Google Chrome Cache files
+del /F /S /Q %LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache\*.*
+
+REM Delete Mozilla Firefox Cache files
+del /F /S /Q %APPDATA%\Mozilla\Firefox\Profiles\*.default\Cache\*.*
+
+REM Delete Opera Cache files
+del /F /S /Q %APPDATA%\Opera Software\Opera Stable\Cache\*.*
+
+REM Delete Safari Cache files
+del /F /S /Q %APPDATA%\Apple Computer\Safari\Cache\*.*
+
+echo Cleanup completed.
+pause
